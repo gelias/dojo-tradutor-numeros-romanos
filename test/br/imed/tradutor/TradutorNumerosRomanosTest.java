@@ -35,5 +35,10 @@ public class TradutorNumerosRomanosTest {
 		TradutorNumerosRomanos tradutor = new TradutorNumerosRomanos();
 		assertEquals("VII",tradutor.traduzir(7));
 	}
-	
+
+	@Test
+	public void deveConverter_numeroArabicoOito_numeroRomanoVIII() {
+		TradutorNumerosRomanos tradutor = new TradutorNumerosRomanos();
+		assertEquals("VIII",tradutor.traduzir(8));
+	}
 }
