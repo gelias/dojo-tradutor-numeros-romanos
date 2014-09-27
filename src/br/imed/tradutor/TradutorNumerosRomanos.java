@@ -8,9 +8,8 @@ public class TradutorNumerosRomanos {
 			return "I"; 
 		case 2:
 			return "II";
-
 		default:
-			return "";
+			return "V";
 		}
 		
 	}
