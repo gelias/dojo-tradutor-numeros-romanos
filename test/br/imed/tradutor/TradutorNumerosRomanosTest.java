@@ -23,4 +23,17 @@ public class TradutorNumerosRomanosTest {
 		TradutorNumerosRomanos tradutor = new TradutorNumerosRomanos();
 		assertEquals("V",tradutor.traduzir(5));
 	}
+	
+	@Test
+	public void deveConverter_numeroArabicoSeis_numeroRomanoVI() {
+		TradutorNumerosRomanos tradutor = new TradutorNumerosRomanos();
+		assertEquals("VI",tradutor.traduzir(6));
+	}
+	
+	@Test
+	public void deveConverter_numeroArabicoSete_numeroRomanoVII() {
+		TradutorNumerosRomanos tradutor = new TradutorNumerosRomanos();
+		assertEquals("VII",tradutor.traduzir(7));
+	}
+	
 }
