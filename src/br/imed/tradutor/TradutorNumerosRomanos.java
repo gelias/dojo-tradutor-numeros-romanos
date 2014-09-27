@@ -2,16 +2,16 @@ package br.imed.tradutor;
 
 public class TradutorNumerosRomanos {
 
-	public Object traduzir(int i) {
-		switch (i) {
-		case 1:
-			return "I"; 
-		case 2:
-			return "II";
-		default:
-			return "V";
+	public String traduzir(int numeroArabico) {
+		StringBuilder result = new StringBuilder();
+		if (numeroArabico <= 3) {
+			for (int j = 0; j < numeroArabico; j++) {
+				result.append("I");
+			}
 		}
-		
+		if (numeroArabico >= 5) {
+			result.append("V").append(traduzir(numeroArabico - 5));
+		}
+		return result.toString();
 	}
-
 }
